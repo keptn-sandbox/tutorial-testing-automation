@@ -1,7 +1,8 @@
-FROM golang:latest
+FROM golang:1.16.2-alpine
 
 # Set the Current Working Directory inside the container
 WORKDIR /app
+RUN apk add build-base
 
 RUN GO111MODULE=on
 
