@@ -1,4 +1,4 @@
-module bitbucket.lab.dynatrace.org/KEPTN/tutorial-testing-automation
+module github.com/keptn-sandbox/tutorial-testing-automation
 
 go 1.14
 
