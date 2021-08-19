@@ -3,8 +3,8 @@ module github.com/keptn-sandbox/tutorial-testing-automation
 go 1.14
 
 require (
-	github.com/PuerkitoBio/goquery v1.5.1
-	github.com/microcosm-cc/bluemonday v1.0.5
-	github.com/stretchr/testify v1.6.1
-	github.com/yuin/goldmark v1.2.1
+	github.com/PuerkitoBio/goquery v1.7.1
+	github.com/microcosm-cc/bluemonday v1.0.15
+	github.com/stretchr/testify v1.7.0
+	github.com/yuin/goldmark v1.4.0
 )
