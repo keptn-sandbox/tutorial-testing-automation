@@ -76,8 +76,9 @@ func convertTutorialIntoBashScript(fileName, outputFileName string) error {
 
 func readInputFile(fileName string) ([]byte, error) {
 	var htmlBytes []byte
+	var splitFileName = strings.Split(fileName, ".")
 
-	if strings.Split(fileName, ".")[1] == "md" {
+	if splitFileName[len(splitFileName)-1] == "md" {
 		mdFile, err := ioutil.ReadFile(fileName)
 		if err != nil {
 			return nil, err
@@ -88,7 +89,7 @@ func readInputFile(fileName string) ([]byte, error) {
 		if err != nil {
 			return nil, err
 		}
-	} else if strings.Split(fileName, ".")[1] == "html" {
+	} else if splitFileName[len(splitFileName)-1] == "html" {
 		htmlFile, err := ioutil.ReadFile(fileName)
 		if err != nil {
 			return nil, err
