@@ -21,11 +21,17 @@ Download the tool by cloning the repository from GitHub.
 
 You can then install the tool by moving into the directory and executing the following command:
 
-```bash 
+```bash
 go install github.com/keptn-sandbox/tutorial-testing-automation
 ```
 
 You should now be able to execute the tool by typing `tutorial-testing-automation` in your command line. If this doesn't work you can still use the application by running `go run main.go` instead of `tutorial-testing-automation`.
+
+If you just want to run the tool you can also just install it through Go:
+
+```bash
+go get github.com/keptn-sandbox/tutorial-testing-automation
+```
 
 ## Converting Markdown file to bash
 
