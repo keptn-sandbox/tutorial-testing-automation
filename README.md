@@ -17,19 +17,21 @@ Please download and install the following tools before continuing:
 
 ## Installing the tool
 
-Download the tool by cloning the repository from Github:
-
-```bash
-git clone https://bitbucket.lab.dynatrace.org/scm/keptn/tutorial-testing-automation.git
-```
+Download the tool by cloning the repository from GitHub.
 
 You can then install the tool by moving into the directory and executing the following command:
 
-```bash 
-go install bitbucket.lab.dynatrace.org/KEPTN/tutorial-testing-automation
+```bash
+go install github.com/keptn-sandbox/tutorial-testing-automation
 ```
 
 You should now be able to execute the tool by typing `tutorial-testing-automation` in your command line. If this doesn't work you can still use the application by running `go run main.go` instead of `tutorial-testing-automation`.
+
+If you just want to run the tool you can also just install it through Go:
+
+```bash
+go get github.com/keptn-sandbox/tutorial-testing-automation
+```
 
 ## Converting Markdown file to bash
 
@@ -45,9 +47,9 @@ The following annotations allow you to define which commands should be copied fr
 
 ### Command annotation
 
-The `command` annotation can be use above code blocks to signal that the code block should be copied into the bash script. If this annotation is not defined the code block will be ignored.
+The `command` annotation can be used together with a code block below to signal that the code block should be copied into the bash script. If this annotation is not defined the code block will be ignored.
 
-Here is an example: 
+#### Example
 
 For the following markdown input:
 
